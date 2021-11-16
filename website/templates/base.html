@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title class="white">{% block title %} Code_Website {% endblock %} </title>
+    <link rel = "stylesheet" type="text/css" href="{{ url_for('static',filename='/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="description" content="Code_Win Tech Blog">
+    <meta name="author" content="Code_Win">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<style>
+    .center {
+        text-align: center;
+    }
+    .colorwhite {
+        color: rgb(163, 163, 163);
+    }
+    .fontsize{
+        font-size: large;
+    }
+    .fontlg{
+        font-size: 40px;
+    }
+    #dosis{
+        font-family: dosis;
+    }
+    
+</style>
+<body>
+    <h1 class="center colorwhite fontlg" id="dosis">Code_Website</h1>
+    
+    <div class="div1">
+        <div class="center-button">
+        </div>
+    </div>
+    <div class="white" id="dosis">
+        <div class="topnav">
+            <div class="centerdiv">
+                <a class="active" href="/">Home</a>
+            <a href="/blogs">Blogs</a>
+            <a href="/login">Login</a>
+            <a href="/sign_up">Sign Up</a>
+        </div>
+            
+          </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+    
+    
+    
+</body>
+</html>
