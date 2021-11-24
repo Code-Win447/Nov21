@@ -4,26 +4,22 @@
 
 {% block content %}
 <form method="post">
-    <h3 align="center">
-        Sign Up
-    </h3>
-    <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email">
-    </div>
-    <div class="form-group">
-        <label for="firstName">First Name</label>
-        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter First Name">
-    </div>
-    <div class="form-group">
-        <label for="password1">Password</label>
-        <input type="text" class="form-control" id="password1" name="password1" placeholder="Enter Password">
-    </div>
-    <div class="form-group">
-        <label for="password2">Password (Confirm)</label>
-        <input type="text" class="form-control" id="password2" name="password2" placeholder="Confirm Password">
-    </div>
-    <br />
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div align="center">
+        <div align="center" class="border dosis">
+           <div class="header dosis">
+              <h1 class="word">Register</h1>
+           </div></br></br></br>
+          <h2 class="word dosis">
+              <form action="{{ url_for('auth.sign_up') }}" method="post">
+                <div class="msg dosis">{{ msg }}</div>
+                  <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
+                  <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br>
+                  <input id="email" name="email" type="text" placeholder="Enter Your Email ID" class="textbox"/></br></br>
+                  <input type="submit" class="btn" value="Sign Up"></br>
+              </form>
+          </h2>
+          <p class="bottom" >Already have an account?  <a class="bottom" href="{{url_for('auth.login')}}"> Sign In here</a></p>
+        </div>
+      </div>    
 </form>
 {% endblock %}
