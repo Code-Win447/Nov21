@@ -121,6 +121,10 @@ body {
     padding: 80px 50px;
     width: 400px;
     height: 450px;
+<<<<<<< HEAD
+=======
+    border: 1px solid rgb(63, 63, 63);
+>>>>>>> b969336e1def8621c71821448b5b298655eed56f
     border-radius: 0px;
     background-color: rgb(63, 63, 63);
 }
@@ -141,7 +145,11 @@ body {
     padding: 10px 40px;
     background-color: rgb(63, 63, 63); 
     color: #FFFFFF;
+<<<<<<< HEAD
     
+=======
+    border-radius: 10px;
+>>>>>>> b969336e1def8621c71821448b5b298655eed56f
 }
       
 ::placeholder {
@@ -162,4 +170,8 @@ body {
 .dosis{
     font-family: dosis;
 }
+<<<<<<< HEAD
   
+=======
+  
+>>>>>>> b969336e1def8621c71821448b5b298655eed56f

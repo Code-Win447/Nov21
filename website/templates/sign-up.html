@@ -4,7 +4,6 @@
 
 {% block content %}
 <form method="post">
-<<<<<<< Updated upstream
     <h3 align="center">
         Sign Up
     </h3>
@@ -26,23 +25,5 @@
     </div>
     <br />
     <button type="submit" class="btn btn-primary">Submit</button>
-=======
-    <div align="center">
-        <div align="center" class="border dosis">
-           <div class="header dosis">
-              <h1 class="word">Register</h1>
-           </div></br></br></br>
-          <h2 class="word dosis">
-              <form action="{{ url_for('auth.sign_up') }}" method="post">
-                <div class="msg dosis">{{ msg }}</div>
-                  <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
-                  <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br>
-                  <input type="submit" class="btn" value="Sign Up"></br>
-              </form>
-          </h2>
-          <p class="bottom" >Already have an account?  <a class="bottom" href="{{url_for('auth.login')}}"> Sign In here</a></p>
-        </div>
-      </div>    
->>>>>>> Stashed changes
 </form>
 {% endblock %}
